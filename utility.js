@@ -21,7 +21,11 @@ function descriptionConv(text) {
 
 
 // 画像URL変換
-function imgUrlConv() {
+function imgUrlConv(urls) {
+  // 先頭のhttpsは何もせず、2個目のhttpsの前に | を追加
+  var n = 1;
+  const formatUrls = urls.replace(/https/g, function(){ if(--n==0) return 'https'; else return '|https'; });
+  return formatUrls
   
 }
 
