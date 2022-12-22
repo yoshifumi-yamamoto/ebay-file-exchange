@@ -1,0 +1,1968 @@
+{
+  "object": "list",
+  "results": [
+    {
+      "object": "page",
+      "id": "114f8886-032b-49cc-b60c-4f0c03260870",
+      "created_time": "2022-12-20T06:58:00.000Z",
+      "last_edited_time": "2022-12-20T06:58:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "2086da7a-4ecb-4aa1-809d-9d284b7761d6"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "2086da7a-4ecb-4aa1-809d-9d284b7761d6"
+      },
+      "cover": null,
+      "icon": null,
+      "parent": {
+        "type": "database_id",
+        "database_id": "22d0cd3b-4149-4542-b033-299784f33409"
+      },
+      "archived": false,
+      "properties": 
+      {
+        "sample": {
+          "id": "N%3Dcw",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "ebay Payments:Immediate pay",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "ebay Payments:Immediate pay",
+              "href": null
+            }
+          ]
+        },
+        "Required": {
+          "id": "lWqh",
+          "type": "select",
+          "select": null
+        },
+        "Type": {
+          "id": "u%5C%3D%3D",
+          "type": "select",
+          "select": {
+            "id": "ff1b1489-9560-4785-acaf-84d24fbcfe39",
+            "name": "Str",
+            "color": "default"
+          }
+        },
+        "Rule": {
+          "id": "waot",
+          "type": "rich_text",
+          "rich_text": []
+        },
+        "Name": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Payments:Immediate",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Payments:Immediate",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://www.notion.so/Payments-Immediate-114f8886032b49ccb60c4f0c03260870"
+    },
+    {
+      "object": "page",
+      "id": "872bd03e-999f-4c7c-8a06-b7bb931a843a",
+      "created_time": "2022-12-20T06:57:00.000Z",
+      "last_edited_time": "2022-12-20T06:58:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "2086da7a-4ecb-4aa1-809d-9d284b7761d6"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "2086da7a-4ecb-4aa1-809d-9d284b7761d6"
+      },
+      "cover": null,
+      "icon": null,
+      "parent": {
+        "type": "database_id",
+        "database_id": "22d0cd3b-4149-4542-b033-299784f33409"
+      },
+      "archived": false,
+      "properties": {
+        "sample": {
+          "id": "N%3Dcw",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Return 30days",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Return 30days",
+              "href": null
+            }
+          ]
+        },
+        "Required": {
+          "id": "lWqh",
+          "type": "select",
+          "select": null
+        },
+        "Type": {
+          "id": "u%5C%3D%3D",
+          "type": "select",
+          "select": {
+            "id": "ff1b1489-9560-4785-acaf-84d24fbcfe39",
+            "name": "Str",
+            "color": "default"
+          }
+        },
+        "Rule": {
+          "id": "waot",
+          "type": "rich_text",
+          "rich_text": []
+        },
+        "Name": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "ReturnProfileName",
+                "link": null
+              },
+              "annotations": {
+                "bold": true,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "ReturnProfileName",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://www.notion.so/ReturnProfileName-872bd03e999f4c7c8a06b7bb931a843a"
+    },
+    {
+      "object": "page",
+      "id": "ad6b54d4-1d80-4a05-9b63-28ec94c330c4",
+      "created_time": "2022-12-20T06:55:00.000Z",
+      "last_edited_time": "2022-12-20T06:56:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "2086da7a-4ecb-4aa1-809d-9d284b7761d6"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "2086da7a-4ecb-4aa1-809d-9d284b7761d6"
+      },
+      "cover": null,
+      "icon": null,
+      "parent": {
+        "type": "database_id",
+        "database_id": "22d0cd3b-4149-4542-b033-299784f33409"
+      },
+      "archived": false,
+      "properties": {
+        "sample": {
+          "id": "N%3Dcw",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Free shipping",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Free shipping",
+              "href": null
+            }
+          ]
+        },
+        "Required": {
+          "id": "lWqh",
+          "type": "select",
+          "select": {
+            "id": "dbe855fe-40fc-4206-bb17-deaad48100f0",
+            "name": "true",
+            "color": "pink"
+          }
+        },
+        "Type": {
+          "id": "u%5C%3D%3D",
+          "type": "select",
+          "select": {
+            "id": "ff1b1489-9560-4785-acaf-84d24fbcfe39",
+            "name": "Str",
+            "color": "default"
+          }
+        },
+        "Rule": {
+          "id": "waot",
+          "type": "rich_text",
+          "rich_text": []
+        },
+        "Name": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "ShippingProfileName",
+                "link": null
+              },
+              "annotations": {
+                "bold": true,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "ShippingProfileName",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://www.notion.so/ShippingProfileName-ad6b54d41d804a059b6328ec94c330c4"
+    },
+    {
+      "object": "page",
+      "id": "18c9d8be-f072-4098-960a-7f55dcea652e",
+      "created_time": "2022-12-20T06:54:00.000Z",
+      "last_edited_time": "2022-12-20T06:54:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "2086da7a-4ecb-4aa1-809d-9d284b7761d6"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "2086da7a-4ecb-4aa1-809d-9d284b7761d6"
+      },
+      "cover": null,
+      "icon": null,
+      "parent": {
+        "type": "database_id",
+        "database_id": "22d0cd3b-4149-4542-b033-299784f33409"
+      },
+      "archived": false,
+      "properties": {
+        "sample": {
+          "id": "N%3Dcw",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "1",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "1",
+              "href": null
+            }
+          ]
+        },
+        "Required": {
+          "id": "lWqh",
+          "type": "select",
+          "select": {
+            "id": "7a9d9dd8-de3c-4aeb-957a-5dc47d3a3506",
+            "name": "false",
+            "color": "gray"
+          }
+        },
+        "Type": {
+          "id": "u%5C%3D%3D",
+          "type": "select",
+          "select": {
+            "id": "8bb746c9-ef75-42a7-8aad-afdff4385340",
+            "name": "Num",
+            "color": "orange"
+          }
+        },
+        "Rule": {
+          "id": "waot",
+          "type": "rich_text",
+          "rich_text": []
+        },
+        "Name": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "BestOfferEnabled",
+                "link": null
+              },
+              "annotations": {
+                "bold": true,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "BestOfferEnabled",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://www.notion.so/BestOfferEnabled-18c9d8bef0724098960a7f55dcea652e"
+    },
+    {
+      "object": "page",
+      "id": "786ea482-79c6-4ceb-a1e1-b48954607920",
+      "created_time": "2022-12-20T06:54:00.000Z",
+      "last_edited_time": "2022-12-20T06:54:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "2086da7a-4ecb-4aa1-809d-9d284b7761d6"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "2086da7a-4ecb-4aa1-809d-9d284b7761d6"
+      },
+      "cover": null,
+      "icon": null,
+      "parent": {
+        "type": "database_id",
+        "database_id": "22d0cd3b-4149-4542-b033-299784f33409"
+      },
+      "archived": false,
+      "properties": {
+        "sample": {
+          "id": "N%3Dcw",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Does not apply",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Does not apply",
+              "href": null
+            }
+          ]
+        },
+        "Required": {
+          "id": "lWqh",
+          "type": "select",
+          "select": {
+            "id": "dbe855fe-40fc-4206-bb17-deaad48100f0",
+            "name": "true",
+            "color": "pink"
+          }
+        },
+        "Type": {
+          "id": "u%5C%3D%3D",
+          "type": "select",
+          "select": {
+            "id": "ff1b1489-9560-4785-acaf-84d24fbcfe39",
+            "name": "Str",
+            "color": "default"
+          }
+        },
+        "Rule": {
+          "id": "waot",
+          "type": "rich_text",
+          "rich_text": []
+        },
+        "Name": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "C:MPN",
+                "link": null
+              },
+              "annotations": {
+                "bold": true,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "C:MPN",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://www.notion.so/C-MPN-786ea48279c64ceba1e1b48954607920"
+    },
+    {
+      "object": "page",
+      "id": "92e583a7-44f0-400f-be11-33572213da76",
+      "created_time": "2022-12-20T06:54:00.000Z",
+      "last_edited_time": "2022-12-20T06:55:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "2086da7a-4ecb-4aa1-809d-9d284b7761d6"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "2086da7a-4ecb-4aa1-809d-9d284b7761d6"
+      },
+      "cover": null,
+      "icon": null,
+      "parent": {
+        "type": "database_id",
+        "database_id": "22d0cd3b-4149-4542-b033-299784f33409"
+      },
+      "archived": false,
+      "properties": {
+        "sample": {
+          "id": "N%3Dcw",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Does not apply",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Does not apply",
+              "href": null
+            }
+          ]
+        },
+        "Required": {
+          "id": "lWqh",
+          "type": "select",
+          "select": {
+            "id": "7a9d9dd8-de3c-4aeb-957a-5dc47d3a3506",
+            "name": "false",
+            "color": "gray"
+          }
+        },
+        "Type": {
+          "id": "u%5C%3D%3D",
+          "type": "select",
+          "select": {
+            "id": "ff1b1489-9560-4785-acaf-84d24fbcfe39",
+            "name": "Str",
+            "color": "default"
+          }
+        },
+        "Rule": {
+          "id": "waot",
+          "type": "rich_text",
+          "rich_text": []
+        },
+        "Name": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Product:UPC",
+                "link": null
+              },
+              "annotations": {
+                "bold": true,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Product:UPC",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://www.notion.so/Product-UPC-92e583a744f0400fbe1133572213da76"
+    },
+    {
+      "object": "page",
+      "id": "3edcce0d-08d4-4b62-9264-a5e3aeb562d8",
+      "created_time": "2022-12-20T01:29:00.000Z",
+      "last_edited_time": "2022-12-20T01:29:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "2086da7a-4ecb-4aa1-809d-9d284b7761d6"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "2086da7a-4ecb-4aa1-809d-9d284b7761d6"
+      },
+      "cover": null,
+      "icon": null,
+      "parent": {
+        "type": "database_id",
+        "database_id": "22d0cd3b-4149-4542-b033-299784f33409"
+      },
+      "archived": false,
+      "properties": {
+        "sample": {
+          "id": "N%3Dcw",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "1",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "1",
+              "href": null
+            }
+          ]
+        },
+        "Required": {
+          "id": "lWqh",
+          "type": "select",
+          "select": {
+            "id": "dbe855fe-40fc-4206-bb17-deaad48100f0",
+            "name": "true",
+            "color": "pink"
+          }
+        },
+        "Type": {
+          "id": "u%5C%3D%3D",
+          "type": "select",
+          "select": {
+            "id": "8bb746c9-ef75-42a7-8aad-afdff4385340",
+            "name": "Num",
+            "color": "orange"
+          }
+        },
+        "Rule": {
+          "id": "waot",
+          "type": "rich_text",
+          "rich_text": []
+        },
+        "Name": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "PayPalAccepted",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "PayPalAccepted",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://www.notion.so/PayPalAccepted-3edcce0d08d44b629264a5e3aeb562d8"
+    },
+    {
+      "object": "page",
+      "id": "5ff0bb25-2ca0-410f-9bc5-25da2a13fcef",
+      "created_time": "2022-12-20T01:29:00.000Z",
+      "last_edited_time": "2022-12-20T01:29:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "2086da7a-4ecb-4aa1-809d-9d284b7761d6"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "2086da7a-4ecb-4aa1-809d-9d284b7761d6"
+      },
+      "cover": null,
+      "icon": null,
+      "parent": {
+        "type": "database_id",
+        "database_id": "22d0cd3b-4149-4542-b033-299784f33409"
+      },
+      "archived": false,
+      "properties": {
+        "sample": {
+          "id": "N%3Dcw",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "1",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "1",
+              "href": null
+            }
+          ]
+        },
+        "Required": {
+          "id": "lWqh",
+          "type": "select",
+          "select": {
+            "id": "dbe855fe-40fc-4206-bb17-deaad48100f0",
+            "name": "true",
+            "color": "pink"
+          }
+        },
+        "Type": {
+          "id": "u%5C%3D%3D",
+          "type": "select",
+          "select": {
+            "id": "8bb746c9-ef75-42a7-8aad-afdff4385340",
+            "name": "Num",
+            "color": "orange"
+          }
+        },
+        "Rule": {
+          "id": "waot",
+          "type": "rich_text",
+          "rich_text": []
+        },
+        "Name": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Quantity",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Quantity",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://www.notion.so/Quantity-5ff0bb252ca0410f9bc525da2a13fcef"
+    },
+    {
+      "object": "page",
+      "id": "7f6e0424-acf8-4618-aa81-90509ac892f3",
+      "created_time": "2022-12-20T01:29:00.000Z",
+      "last_edited_time": "2022-12-20T01:29:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "2086da7a-4ecb-4aa1-809d-9d284b7761d6"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "2086da7a-4ecb-4aa1-809d-9d284b7761d6"
+      },
+      "cover": null,
+      "icon": null,
+      "parent": {
+        "type": "database_id",
+        "database_id": "22d0cd3b-4149-4542-b033-299784f33409"
+      },
+      "archived": false,
+      "properties": {
+        "sample": {
+          "id": "N%3Dcw",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Japan",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Japan",
+              "href": null
+            }
+          ]
+        },
+        "Required": {
+          "id": "lWqh",
+          "type": "select",
+          "select": {
+            "id": "dbe855fe-40fc-4206-bb17-deaad48100f0",
+            "name": "true",
+            "color": "pink"
+          }
+        },
+        "Type": {
+          "id": "u%5C%3D%3D",
+          "type": "select",
+          "select": {
+            "id": "ff1b1489-9560-4785-acaf-84d24fbcfe39",
+            "name": "Str",
+            "color": "default"
+          }
+        },
+        "Rule": {
+          "id": "waot",
+          "type": "rich_text",
+          "rich_text": []
+        },
+        "Name": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Location",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Location",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://www.notion.so/Location-7f6e0424acf84618aa8190509ac892f3"
+    },
+    {
+      "object": "page",
+      "id": "3cb58804-09f6-4e3a-8be0-009c41bc2799",
+      "created_time": "2022-12-20T01:28:00.000Z",
+      "last_edited_time": "2022-12-20T01:28:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "2086da7a-4ecb-4aa1-809d-9d284b7761d6"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "2086da7a-4ecb-4aa1-809d-9d284b7761d6"
+      },
+      "cover": null,
+      "icon": null,
+      "parent": {
+        "type": "database_id",
+        "database_id": "22d0cd3b-4149-4542-b033-299784f33409"
+      },
+      "archived": false,
+      "properties": {
+        "sample": {
+          "id": "N%3Dcw",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "FixedPrice",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "FixedPrice",
+              "href": null
+            }
+          ]
+        },
+        "Required": {
+          "id": "lWqh",
+          "type": "select",
+          "select": {
+            "id": "dbe855fe-40fc-4206-bb17-deaad48100f0",
+            "name": "true",
+            "color": "pink"
+          }
+        },
+        "Type": {
+          "id": "u%5C%3D%3D",
+          "type": "select",
+          "select": {
+            "id": "ff1b1489-9560-4785-acaf-84d24fbcfe39",
+            "name": "Str",
+            "color": "default"
+          }
+        },
+        "Rule": {
+          "id": "waot",
+          "type": "rich_text",
+          "rich_text": []
+        },
+        "Name": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Format",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Format",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://www.notion.so/Format-3cb5880409f64e3a8be0009c41bc2799"
+    },
+    {
+      "object": "page",
+      "id": "55cf6665-2e75-4c62-9e3f-906e5f36351d",
+      "created_time": "2022-12-20T01:28:00.000Z",
+      "last_edited_time": "2022-12-20T01:28:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "2086da7a-4ecb-4aa1-809d-9d284b7761d6"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "2086da7a-4ecb-4aa1-809d-9d284b7761d6"
+      },
+      "cover": null,
+      "icon": null,
+      "parent": {
+        "type": "database_id",
+        "database_id": "22d0cd3b-4149-4542-b033-299784f33409"
+      },
+      "archived": false,
+      "properties": {
+        "sample": {
+          "id": "N%3Dcw",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "GTC",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "GTC",
+              "href": null
+            }
+          ]
+        },
+        "Required": {
+          "id": "lWqh",
+          "type": "select",
+          "select": {
+            "id": "dbe855fe-40fc-4206-bb17-deaad48100f0",
+            "name": "true",
+            "color": "pink"
+          }
+        },
+        "Type": {
+          "id": "u%5C%3D%3D",
+          "type": "select",
+          "select": {
+            "id": "ff1b1489-9560-4785-acaf-84d24fbcfe39",
+            "name": "Str",
+            "color": "default"
+          }
+        },
+        "Rule": {
+          "id": "waot",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "GTC(入札されるまで出品し続ける)",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "GTC(入札されるまで出品し続ける)",
+              "href": null
+            }
+          ]
+        },
+        "Name": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Duration",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Duration",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://www.notion.so/Duration-55cf66652e754c629e3f906e5f36351d"
+    },
+    {
+      "object": "page",
+      "id": "09a736c0-0ccb-4ae7-a4cd-10d199534a76",
+      "created_time": "2022-12-20T01:27:00.000Z",
+      "last_edited_time": "2022-12-20T01:27:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "2086da7a-4ecb-4aa1-809d-9d284b7761d6"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "2086da7a-4ecb-4aa1-809d-9d284b7761d6"
+      },
+      "cover": null,
+      "icon": null,
+      "parent": {
+        "type": "database_id",
+        "database_id": "22d0cd3b-4149-4542-b033-299784f33409"
+      },
+      "archived": false,
+      "properties": {
+        "sample": {
+          "id": "N%3Dcw",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "<div>description</div>",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "<div>description</div>",
+              "href": null
+            }
+          ]
+        },
+        "Required": {
+          "id": "lWqh",
+          "type": "select",
+          "select": {
+            "id": "dbe855fe-40fc-4206-bb17-deaad48100f0",
+            "name": "true",
+            "color": "pink"
+          }
+        },
+        "Type": {
+          "id": "u%5C%3D%3D",
+          "type": "select",
+          "select": {
+            "id": "ff1b1489-9560-4785-acaf-84d24fbcfe39",
+            "name": "Str",
+            "color": "default"
+          }
+        },
+        "Rule": {
+          "id": "waot",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "html",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "html",
+              "href": null
+            }
+          ]
+        },
+        "Name": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Description",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Description",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://www.notion.so/Description-09a736c00ccb4ae7a4cd10d199534a76"
+    },
+    {
+      "object": "page",
+      "id": "e366e06b-1617-4236-8d0f-c074c4ae25b7",
+      "created_time": "2022-12-20T01:27:00.000Z",
+      "last_edited_time": "2022-12-20T01:27:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "2086da7a-4ecb-4aa1-809d-9d284b7761d6"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "2086da7a-4ecb-4aa1-809d-9d284b7761d6"
+      },
+      "cover": null,
+      "icon": null,
+      "parent": {
+        "type": "database_id",
+        "database_id": "22d0cd3b-4149-4542-b033-299784f33409"
+      },
+      "archived": false,
+      "properties": {
+        "sample": {
+          "id": "N%3Dcw",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "ブランド名",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "ブランド名",
+              "href": null
+            }
+          ]
+        },
+        "Required": {
+          "id": "lWqh",
+          "type": "select",
+          "select": {
+            "id": "dbe855fe-40fc-4206-bb17-deaad48100f0",
+            "name": "true",
+            "color": "pink"
+          }
+        },
+        "Type": {
+          "id": "u%5C%3D%3D",
+          "type": "select",
+          "select": {
+            "id": "ff1b1489-9560-4785-acaf-84d24fbcfe39",
+            "name": "Str",
+            "color": "default"
+          }
+        },
+        "Rule": {
+          "id": "waot",
+          "type": "rich_text",
+          "rich_text": []
+        },
+        "Name": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "C:Brand",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "C:Brand",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://www.notion.so/C-Brand-e366e06b161742368d0fc074c4ae25b7"
+    },
+    {
+      "object": "page",
+      "id": "4aef84ee-6994-4b27-adb9-4af388593e57",
+      "created_time": "2022-12-20T01:26:00.000Z",
+      "last_edited_time": "2022-12-20T01:26:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "2086da7a-4ecb-4aa1-809d-9d284b7761d6"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "2086da7a-4ecb-4aa1-809d-9d284b7761d6"
+      },
+      "cover": null,
+      "icon": null,
+      "parent": {
+        "type": "database_id",
+        "database_id": "22d0cd3b-4149-4542-b033-299784f33409"
+      },
+      "archived": false,
+      "properties": {
+        "sample": {
+          "id": "N%3Dcw",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "123345",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "123345",
+              "href": null
+            }
+          ]
+        },
+        "Required": {
+          "id": "lWqh",
+          "type": "select",
+          "select": {
+            "id": "7a9d9dd8-de3c-4aeb-957a-5dc47d3a3506",
+            "name": "false",
+            "color": "gray"
+          }
+        },
+        "Type": {
+          "id": "u%5C%3D%3D",
+          "type": "select",
+          "select": {
+            "id": "ff1b1489-9560-4785-acaf-84d24fbcfe39",
+            "name": "Str",
+            "color": "default"
+          }
+        },
+        "Rule": {
+          "id": "waot",
+          "type": "rich_text",
+          "rich_text": []
+        },
+        "Name": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "CustomLabel",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "CustomLabel",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://www.notion.so/CustomLabel-4aef84ee69944b27adb94af388593e57"
+    },
+    {
+      "object": "page",
+      "id": "e9d20a8b-0b1a-4150-9d6b-09bcb1cde6a6",
+      "created_time": "2022-12-20T01:26:00.000Z",
+      "last_edited_time": "2022-12-20T01:26:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "2086da7a-4ecb-4aa1-809d-9d284b7761d6"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "2086da7a-4ecb-4aa1-809d-9d284b7761d6"
+      },
+      "cover": null,
+      "icon": null,
+      "parent": {
+        "type": "database_id",
+        "database_id": "22d0cd3b-4149-4542-b033-299784f33409"
+      },
+      "archived": false,
+      "properties": {
+        "sample": {
+          "id": "N%3Dcw",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "1000",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "1000",
+              "href": null
+            }
+          ]
+        },
+        "Required": {
+          "id": "lWqh",
+          "type": "select",
+          "select": {
+            "id": "dbe855fe-40fc-4206-bb17-deaad48100f0",
+            "name": "true",
+            "color": "pink"
+          }
+        },
+        "Type": {
+          "id": "u%5C%3D%3D",
+          "type": "select",
+          "select": {
+            "id": "8bb746c9-ef75-42a7-8aad-afdff4385340",
+            "name": "Num",
+            "color": "orange"
+          }
+        },
+        "Rule": {
+          "id": "waot",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "画像参照",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "画像参照",
+              "href": null
+            }
+          ]
+        },
+        "Name": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "ConditionID",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "ConditionID",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://www.notion.so/ConditionID-e9d20a8b0b1a41509d6b09bcb1cde6a6"
+    },
+    {
+      "object": "page",
+      "id": "a296c7dc-2dac-4363-9ba4-c6fbacd237aa",
+      "created_time": "2022-12-20T01:25:00.000Z",
+      "last_edited_time": "2022-12-20T01:25:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "2086da7a-4ecb-4aa1-809d-9d284b7761d6"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "2086da7a-4ecb-4aa1-809d-9d284b7761d6"
+      },
+      "cover": null,
+      "icon": null,
+      "parent": {
+        "type": "database_id",
+        "database_id": "22d0cd3b-4149-4542-b033-299784f33409"
+      },
+      "archived": false,
+      "properties": {
+        "sample": {
+          "id": "N%3Dcw",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "120",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "120",
+              "href": null
+            }
+          ]
+        },
+        "Required": {
+          "id": "lWqh",
+          "type": "select",
+          "select": {
+            "id": "dbe855fe-40fc-4206-bb17-deaad48100f0",
+            "name": "true",
+            "color": "pink"
+          }
+        },
+        "Type": {
+          "id": "u%5C%3D%3D",
+          "type": "select",
+          "select": {
+            "id": "8bb746c9-ef75-42a7-8aad-afdff4385340",
+            "name": "Num",
+            "color": "orange"
+          }
+        },
+        "Rule": {
+          "id": "waot",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "$",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "$",
+              "href": null
+            }
+          ]
+        },
+        "Name": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "StartPrice",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "StartPrice",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://www.notion.so/StartPrice-a296c7dc2dac43639ba4c6fbacd237aa"
+    },
+    {
+      "object": "page",
+      "id": "900bc955-2741-4654-886c-2985313b4c6a",
+      "created_time": "2022-12-20T01:24:00.000Z",
+      "last_edited_time": "2022-12-20T01:25:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "2086da7a-4ecb-4aa1-809d-9d284b7761d6"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "2086da7a-4ecb-4aa1-809d-9d284b7761d6"
+      },
+      "cover": null,
+      "icon": null,
+      "parent": {
+        "type": "database_id",
+        "database_id": "22d0cd3b-4149-4542-b033-299784f33409"
+      },
+      "archived": false,
+      "properties": {
+        "sample": {
+          "id": "N%3Dcw",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "https://….|https://…",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "https://….|https://…",
+              "href": null
+            }
+          ]
+        },
+        "Required": {
+          "id": "lWqh",
+          "type": "select",
+          "select": {
+            "id": "dbe855fe-40fc-4206-bb17-deaad48100f0",
+            "name": "true",
+            "color": "pink"
+          }
+        },
+        "Type": {
+          "id": "u%5C%3D%3D",
+          "type": "select",
+          "select": {
+            "id": "ff1b1489-9560-4785-acaf-84d24fbcfe39",
+            "name": "Str",
+            "color": "default"
+          }
+        },
+        "Rule": {
+          "id": "waot",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "|区切り",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "|区切り",
+              "href": null
+            }
+          ]
+        },
+        "Name": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "PicURL",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "PicURL",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://www.notion.so/PicURL-900bc95527414654886c2985313b4c6a"
+    },
+    {
+      "object": "page",
+      "id": "561dc4be-8fd4-4954-87a3-5236e09becc7",
+      "created_time": "2022-12-20T01:20:00.000Z",
+      "last_edited_time": "2022-12-20T01:23:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "2086da7a-4ecb-4aa1-809d-9d284b7761d6"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "2086da7a-4ecb-4aa1-809d-9d284b7761d6"
+      },
+      "cover": null,
+      "icon": null,
+      "parent": {
+        "type": "database_id",
+        "database_id": "22d0cd3b-4149-4542-b033-299784f33409"
+      },
+      "archived": false,
+      "properties": {
+        "sample": {
+          "id": "N%3Dcw",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "10222",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "10222",
+              "href": null
+            }
+          ]
+        },
+        "Required": {
+          "id": "lWqh",
+          "type": "select",
+          "select": {
+            "id": "dbe855fe-40fc-4206-bb17-deaad48100f0",
+            "name": "true",
+            "color": "pink"
+          }
+        },
+        "Type": {
+          "id": "u%5C%3D%3D",
+          "type": "select",
+          "select": {
+            "id": "8bb746c9-ef75-42a7-8aad-afdff4385340",
+            "name": "Num",
+            "color": "orange"
+          }
+        },
+        "Rule": {
+          "id": "waot",
+          "type": "rich_text",
+          "rich_text": []
+        },
+        "Name": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Category",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Category",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://www.notion.so/Category-561dc4be8fd4495487a35236e09becc7"
+    },
+    {
+      "object": "page",
+      "id": "86cc803f-6f6b-4db8-ba74-5f1cdf60014a",
+      "created_time": "2022-12-20T01:20:00.000Z",
+      "last_edited_time": "2022-12-20T01:24:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "2086da7a-4ecb-4aa1-809d-9d284b7761d6"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "2086da7a-4ecb-4aa1-809d-9d284b7761d6"
+      },
+      "cover": null,
+      "icon": null,
+      "parent": {
+        "type": "database_id",
+        "database_id": "22d0cd3b-4149-4542-b033-299784f33409"
+      },
+      "archived": false,
+      "properties": {
+        "sample": {
+          "id": "N%3Dcw",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "pokemon",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "pokemon",
+              "href": null
+            }
+          ]
+        },
+        "Required": {
+          "id": "lWqh",
+          "type": "select",
+          "select": {
+            "id": "dbe855fe-40fc-4206-bb17-deaad48100f0",
+            "name": "true",
+            "color": "pink"
+          }
+        },
+        "Type": {
+          "id": "u%5C%3D%3D",
+          "type": "select",
+          "select": {
+            "id": "ff1b1489-9560-4785-acaf-84d24fbcfe39",
+            "name": "Str",
+            "color": "default"
+          }
+        },
+        "Rule": {
+          "id": "waot",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "80文字以内",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "80文字以内",
+              "href": null
+            }
+          ]
+        },
+        "Name": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Title",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Title",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://www.notion.so/Title-86cc803f6f6b4db8ba745f1cdf60014a"
+    },
+    {
+      "object": "page",
+      "id": "a189fb19-4db6-4f98-8a88-ce27c9549587",
+      "created_time": "2022-12-20T01:20:00.000Z",
+      "last_edited_time": "2022-12-20T01:23:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "2086da7a-4ecb-4aa1-809d-9d284b7761d6"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "2086da7a-4ecb-4aa1-809d-9d284b7761d6"
+      },
+      "cover": null,
+      "icon": null,
+      "parent": {
+        "type": "database_id",
+        "database_id": "22d0cd3b-4149-4542-b033-299784f33409"
+      },
+      "archived": false,
+      "properties": {
+        "sample": {
+          "id": "N%3Dcw",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "add",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "add",
+              "href": null
+            }
+          ]
+        },
+        "Required": {
+          "id": "lWqh",
+          "type": "select",
+          "select": {
+            "id": "dbe855fe-40fc-4206-bb17-deaad48100f0",
+            "name": "true",
+            "color": "pink"
+          }
+        },
+        "Type": {
+          "id": "u%5C%3D%3D",
+          "type": "select",
+          "select": {
+            "id": "ff1b1489-9560-4785-acaf-84d24fbcfe39",
+            "name": "Str",
+            "color": "default"
+          }
+        },
+        "Rule": {
+          "id": "waot",
+          "type": "rich_text",
+          "rich_text": []
+        },
+        "Name": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Action(SiteID=US|Country=JP|Currency=USD|Version=941)",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Action(SiteID=US|Country=JP|Currency=USD|Version=941)",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://www.notion.so/Action-SiteID-US-Country-JP-Currency-USD-Version-941-a189fb194db64f988a88ce27c9549587"
+    }
+  ],
+  "next_cursor": null,
+  "has_more": false
+}
