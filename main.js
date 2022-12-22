@@ -1,3 +1,4 @@
 function myFunction() {
-  const test="A"
+  const text='これはペンです。'
+  console.log(descriptionConv(text))
 }
