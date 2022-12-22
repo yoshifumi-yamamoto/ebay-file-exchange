@@ -7,8 +7,15 @@ function arrConv(arr) {
 }
 
 // タイトル変換
-function titleConv() {
-
+function titleConv(title) {
+  const translationText = LanguageApp.translate(title, 'ja', 'en')
+  if(translationText.length > 80){
+    const fixedTitle = translationText.substr(0, 80)
+    return fixedTitle
+  }
+  else{
+    return translationText
+  }
 }
 
 // 商品説明変換
