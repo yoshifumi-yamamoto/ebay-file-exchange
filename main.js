@@ -13,6 +13,17 @@ function showModal(){
     spreadsheet.show(html);
 }
 
+// 入力項目を取得
+function getParams() {
+  const fileName = 'params.json'
+  var fileIT = DriveApp.getFilesByName(fileName).next();
+  var textdata = fileIT.getBlob().getDataAsString('utf8');
+  var jobj = JSON.parse(textdata);
+  console.log(jobj)
+
+
+}
+
 function myFunction() {
   const text='これはペンです。'
   // const sample ="https://m.media-amazon.com/images/G/09/HomeCustomProduct/360_icon_73x73v2._CB485971312__FMpng_RI_.pnghttps://m.media-amazon.com/images/I/41giDQs6tUL._AC_US40_.jpghttps://m.media-amazon.com/images/I/41dP2SXRliL._AC_US40_.jpghttps://m.media-amazon.com/images/I/51HPCe2BMzL._AC_US40_.jpghttps://m.media-amazon.com/images/I/41Xgnl7FVkL._AC_US40_.jpghttps://m.media-amazon.com/images/I/41mLMa5t3xL._AC_US40_.jpg"
