@@ -1,3 +1,22 @@
+var SETTINGS = SpreadsheetApp.getActiveSpreadsheet().getSheetByName('設定') // 設定シート情報
+// 設定利益率
+var profitRate = SETTINGS.getRange('F2').getDisplayValue()
+// ドル円レート
+var USDJPY = SETTINGS.getRange('G2').getDisplayValue()
+// 料金表シート情報
+var priceTable = SpreadsheetApp.getActiveSpreadsheet().getSheetByName('料金表')
+// 重量列取得
+var weightList = arrConv(priceTable.getRange(3,1,86,1).getValues())
+// Fedex(北米)列取得
+var priceList = arrConv(priceTable.getRange(3,11,86,1).getValues())
+// 燃料サーチャージ％取得
+var fuelSurchargeRatio = SETTINGS.getRange('E2').getDisplayValue()
+// サイズ表記がない場合に使用する各サイズ
+var defaultLength = SETTINGS.getRange('B2').getDisplayValue()
+var defaultWidth = SETTINGS.getRange('C2').getDisplayValue()
+var defaultHeight = SETTINGS.getRange('D2').getDisplayValue()
+var defaultWeight = SETTINGS.getRange('A2').getDisplayValue()
+
 // 2次元配列の1次元化
 function arrConv(arr) {
   const formatted = arr.reduce(function (acc, cur, i) {
@@ -38,6 +57,104 @@ function imgUrlConv(urls) {
 
 
 // 価格変換
-function priceConv() {
+function priceConv(size, costPrice) {
+  const sizes = size.split(' x ')
+  // 長さ
+  const length = Number(sizes[0])
+  // 幅
+  const width = Number(sizes[1])
+  const heightWithWeight = sizes[2].split(' cm; ')
+  // 高さ
+  const height = Number(heightWithWeight[0])
+  // gかkgか
+  const isKg = heightWithWeight[1].indexOf('kg') !== -1
+  // 重さ(g)
+  var normalWeight
+  if(isKg){
+    normalWeight =  Number(heightWithWeight[1].replace(' kg','')) * 1000
+  }
+  else{
+    normalWeight =  Number(heightWithWeight[1].replace(' g',''))
+  }
+  console.log('梱包サイズ', sizes)
+  console.log('長さ',length)
+  console.log('幅', width)
+  console.log('高さ', height)
+  console.log('重量', normalWeight)
+
+  // 発送重量
+  const shippingWeight = calcShippingWeight(length, width, height, normalWeight)
+  // 送料
+  const shippingCost = calcShippingCost(shippingWeight)
   
+  // 販売手数料(%)
+  const salesCommissionPercentage = 0.2
+
+
+  // 価格計算
+  // 販売価格＝原価÷（1 - 利益率 - 手数料）
+  const sellingPriceYen = (costPrice + shippingCost) / (1 - profitRate - salesCommissionPercentage)
+  const sellingPrice = Math.floor(sellingPriceYen / USDJPY * 10) / 10
+  console.log('販売価格',sellingPrice)
+  
+  return sellingPrice
+
+}
+
+// 重量計算
+function calcShippingWeight(length, width, height, weight) {
+  // 容積重量
+  var volumetricWeight
+  // 実重量
+  var shippingWeight
+  if(length){
+    console.log('サイズ表記あり')
+    volumetricWeight = (length * width * height) / 5 //g換算
+    // 重量と容積重量の比較
+    if(volumetricWeight > weight){
+      shippingWeight = volumetricWeight
+    }else{
+      shippingWeight = weight
+    }
+  }else{
+    console.log('サイズ表記なし')
+    // 仕入れ先にサイズがない場合
+    volumetricWeight = (defaultLength * defaultWidth * defaultHeight) / 5 //g換算
+    // 重量と容積重量の比較
+    if(volumetricWeight > defaultWeight){
+      shippingWeight = volumetricWeight
+    }else{
+      shippingWeight = defaultWeight
+    }
+  }
+  console.log('発送重量', shippingWeight)
+  return shippingWeight
+}
+
+// 送料計算
+function calcShippingCost(weight) {
+  // 重量の500単位計算処理
+  var tripleDigits = Number(String(weight).slice(-3))
+  var finalWeight
+  if( 500 >= tripleDigits && tripleDigits > 0){
+    finalWeight = (Math.floor(weight/1000) * 1000) + 500
+  }else if(tripleDigits === 0){
+    finalWeight = weight
+  }else{
+    finalWeight = Math.ceil(weight/1000) * 1000
+  }
+
+  // 料金表と一致する行番号
+  const matchWeightIndex = weightList.indexOf(finalWeight)
+  // Fedex 基本料金(北米)
+  const shippingBaseCost = priceList[matchWeightIndex]
+  // 繁忙期割増金(1kg毎に110円)
+  const peakSeasonSurcharge = 110 * (finalWeight / 1000)
+  // 燃料サーチャージ
+  const fuelSurcharge = Math.floor(shippingBaseCost * fuelSurchargeRatio)
+
+  const shippingCost = shippingBaseCost + peakSeasonSurcharge + fuelSurcharge
+  console.log('送料', shippingCost)
+  return shippingCost
+
 }
