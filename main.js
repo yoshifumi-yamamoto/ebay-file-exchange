@@ -1,3 +1,18 @@
+function showModal(){
+    // 開いているスプレッドシートを取得
+    const spreadsheet = SpreadsheetApp.getActiveSpreadsheet();
+
+    // HTMLファイルを取得
+    const output = HtmlService.createTemplateFromFile('index');
+    const data = spreadsheet.getSheetByName('設定');
+  
+    const projectsLastRow = data.getRange(1, 1).getNextDataCell(SpreadsheetApp.Direction.DOWN).getRow();
+    output.projects = data.getRange(2, 1, projectsLastRow - 1).getValues();
+  
+    const html = output.evaluate();
+    spreadsheet.show(html);
+}
+
 function myFunction() {
   const text='これはペンです。'
   // const sample ="https://m.media-amazon.com/images/G/09/HomeCustomProduct/360_icon_73x73v2._CB485971312__FMpng_RI_.pnghttps://m.media-amazon.com/images/I/41giDQs6tUL._AC_US40_.jpghttps://m.media-amazon.com/images/I/41dP2SXRliL._AC_US40_.jpghttps://m.media-amazon.com/images/I/51HPCe2BMzL._AC_US40_.jpghttps://m.media-amazon.com/images/I/41Xgnl7FVkL._AC_US40_.jpghttps://m.media-amazon.com/images/I/41mLMa5t3xL._AC_US40_.jpg"
