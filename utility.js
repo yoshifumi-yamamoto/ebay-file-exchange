@@ -58,6 +58,7 @@ function imgUrlConv(urls) {
 
 // 価格変換
 function priceConv(size, costPrice) {
+  console.log('size',size)
   const sizes = size.split(' x ')
   // 長さ
   const length = Number(sizes[0])
@@ -93,7 +94,10 @@ function priceConv(size, costPrice) {
 
   // 価格計算
   // 販売価格＝原価÷（1 - 利益率 - 手数料）
-  const sellingPriceYen = (costPrice + shippingCost) / (1 - profitRate - salesCommissionPercentage)
+  console.log('costPrice',costPrice)
+  const sellingPriceYen = (Number(costPrice.replace(/,/g, "")) + shippingCost) / (1 - profitRate - salesCommissionPercentage)
+  console.log('原価',Number(costPrice) + shippingCost)
+  console.log('sellingPriceYen',sellingPriceYen)
   const sellingPrice = Math.floor(sellingPriceYen / USDJPY * 10) / 10
   console.log('販売価格',sellingPrice)
   

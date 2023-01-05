@@ -16,13 +16,62 @@ function showModal(){
 // 入力項目を取得
 function getParams() {
   const fileName = 'params.json'
-  var fileIT = DriveApp.getFilesByName(fileName).next();
-  var textdata = fileIT.getBlob().getDataAsString('utf8');
-  var jobj = JSON.parse(textdata);
-  console.log(jobj)
-
+  const fileIT = DriveApp.getFilesByName(fileName).next();
+  const textdata = fileIT.getBlob().getDataAsString('utf8');
+  const data = JSON.parse(textdata);
+  // console.log(data)
+  const results = data.results
+  const params = results.map(function(item){return item.properties.Name.title[0].plain_text}).reverse()
+  return params
 
 }
+
+// アップロードボタン
+function sendForm(formObject) {
+  
+  // フォームから受け取ったcsvデータ
+  const blob = formObject.myFile;
+  const csvText = blob.getDataAsString();
+  const data = Utilities.parseCsv(csvText);
+
+  const ss = SpreadsheetApp.getActive();
+  const sheet = ss.getSheetByName('シート1');
+
+  // 2次元配列に整形
+  var addValues = []
+  addValues = formatData(data)
+  console.log('addValues', addValues)
+  
+  // 既存レコードをクリアし、CSVのレコードを貼り付け
+  // clearRecords(RC_ROW, RC_COL, sheet);
+  // sheet.getRange(RC_ROW, RC_COL, addValues.length, addValues[0].length).setValues(addValues);
+  sheet.getRange(2, 1, addValues.length, addValues[0].length).setValues(addValues);
+}
+
+function formatData(data){
+  // csvをjson化
+  const [header, ...rows] = data
+  const jsonData = rows.map((row) =>
+    row.reduce((acc, cell, i) => ({ ...acc, [header[i]]: cell }), {})
+  );
+  const params = getParams()
+
+  const formatedData = jsonData.map((d)=>{
+    return params.map((param)=>{
+      if(d[param]=== undefined){return ''}
+      switch(param){
+        case 'Title':return titleConv(d[param])
+        case 'PicURL': return imgUrlConv(d[param])
+        case 'StartPrice': return priceConv(d['Size'], d[param])
+        case 'Description': return descriptionConv(d[param])
+        default:return d[param]
+
+      }
+    })
+  })
+  return formatedData
+}
+
 
 function myFunction() {
   const text='これはペンです。'
