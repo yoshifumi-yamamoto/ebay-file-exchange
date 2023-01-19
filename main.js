@@ -47,7 +47,6 @@ function sendForm(formObject) {
   // sheet.getRange(RC_ROW, RC_COL, addValues.length, addValues[0].length).setValues(addValues);
   sheet.getRange(2, 1, addValues.length, addValues[0].length).setValues(addValues);
 }
-
 function formatData(data){
   // csvをjson化
   const [header, ...rows] = data
@@ -55,10 +54,18 @@ function formatData(data){
     row.reduce((acc, cell, i) => ({ ...acc, [header[i]]: cell }), {})
   );
   const params = getParams()
-
+  console.log('header', header)
+  console.log('params', params)
+  console.log('jsonData',jsonData)
   const formatedData = jsonData.map((d)=>{
+    Utilities.sleep(1000)
     return params.map((param)=>{
-      if(d[param]=== undefined){return ''}
+      
+      if(d[param]=== undefined){
+        console.log('undefined', param, d)
+        return ''}
+
+      console.log('param', param)
       switch(param){
         case 'Title':return titleConv(d[param])
         case 'PicURL': return imgUrlConv(d[param])
