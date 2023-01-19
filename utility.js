@@ -27,6 +27,7 @@ function arrConv(arr) {
 
 // タイトル変換
 function titleConv(title) {
+  console.log('titleConv')
   const translationText = LanguageApp.translate(title, 'ja', 'en')
   if(translationText.length > 80){
     const fixedTitle = translationText.substr(0, 80)
@@ -58,25 +59,40 @@ function imgUrlConv(urls) {
 
 // 価格変換
 function priceConv(size, costPrice) {
+  var sizes
+  var length
+  var width
+  var height
+  var heightWithWeight
+  var isKg
+    // 重さ(g)
+    var normalWeight
+
+  if(size.indexOf('cm') !== -1){
+    console.log('ifsize', size)
+    isKg = size.indexOf('kg') !== -1
+    sizes = size.split(' x ')
+    // 長さ
+    length = Number(sizes[0])
+    // 幅
+    width = Number(sizes[1])
+    heightWithWeight = sizes[2].split(' cm; ')
+    // 高さ
+    height = Number(heightWithWeight[0])
+    // gかkgか
+    isKg = heightWithWeight[1].indexOf('kg') !== -1
+
+    if(isKg){
+      normalWeight =  Number(heightWithWeight[1].replace(' kg','')) * 1000
+    }
+    else{
+      normalWeight =  Number(heightWithWeight[1].replace(' g',''))
+    }
+  }
   console.log('size',size)
-  const sizes = size.split(' x ')
-  // 長さ
-  const length = Number(sizes[0])
-  // 幅
-  const width = Number(sizes[1])
-  const heightWithWeight = sizes[2].split(' cm; ')
-  // 高さ
-  const height = Number(heightWithWeight[0])
-  // gかkgか
-  const isKg = heightWithWeight[1].indexOf('kg') !== -1
-  // 重さ(g)
-  var normalWeight
-  if(isKg){
-    normalWeight =  Number(heightWithWeight[1].replace(' kg','')) * 1000
-  }
-  else{
-    normalWeight =  Number(heightWithWeight[1].replace(' g',''))
-  }
+  
+
+
   console.log('梱包サイズ', sizes)
   console.log('長さ',length)
   console.log('幅', width)
@@ -95,8 +111,10 @@ function priceConv(size, costPrice) {
   // 価格計算
   // 販売価格＝原価÷（1 - 利益率 - 手数料）
   console.log('costPrice',costPrice)
-  const sellingPriceYen = (Number(costPrice.replace(/,/g, "")) + shippingCost) / (1 - profitRate - salesCommissionPercentage)
-  console.log('原価',Number(costPrice) + shippingCost)
+  // 神間を削除
+  const formattedCostPrice = Number(costPrice.replace(/,/g, ""))
+  const sellingPriceYen = (formattedCostPrice + shippingCost) / (1 - profitRate - salesCommissionPercentage)
+  console.log('原価',formattedCostPrice + shippingCost)
   console.log('sellingPriceYen',sellingPriceYen)
   const sellingPrice = Math.floor(sellingPriceYen / USDJPY * 10) / 10
   console.log('販売価格',sellingPrice)
