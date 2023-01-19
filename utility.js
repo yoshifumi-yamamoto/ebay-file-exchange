@@ -27,7 +27,6 @@ function arrConv(arr) {
 
 // タイトル変換
 function titleConv(title) {
-  console.log('titleConv')
   const translationText = LanguageApp.translate(title, 'ja', 'en')
   if(translationText.length > 80){
     const fixedTitle = translationText.substr(0, 80)
@@ -69,7 +68,6 @@ function priceConv(size, costPrice) {
     var normalWeight
 
   if(size.indexOf('cm') !== -1){
-    console.log('ifsize', size)
     isKg = size.indexOf('kg') !== -1
     sizes = size.split(' x ')
     // 長さ
@@ -159,21 +157,31 @@ function calcShippingCost(weight) {
   var tripleDigits = Number(String(weight).slice(-3))
   var finalWeight
   if( 500 >= tripleDigits && tripleDigits > 0){
+    console.log('finalweight if')
     finalWeight = (Math.floor(weight/1000) * 1000) + 500
   }else if(tripleDigits === 0){
+    console.log('finalweight else if')
     finalWeight = weight
   }else{
+    console.log('finalweight else')
     finalWeight = Math.ceil(weight/1000) * 1000
   }
+  console.log('finalweight', finalWeight)
 
   // 料金表と一致する行番号
   const matchWeightIndex = weightList.indexOf(finalWeight)
+  console.log('料金表と一致する行番号', matchWeightIndex)
+
   // Fedex 基本料金(北米)
   const shippingBaseCost = priceList[matchWeightIndex]
+  console.log('Fedex 基本料金(北米)', shippingBaseCost)
+
   // 繁忙期割増金(1kg毎に110円)
   const peakSeasonSurcharge = 110 * (finalWeight / 1000)
+  console.log('繁忙期割増金', peakSeasonSurcharge)
   // 燃料サーチャージ
   const fuelSurcharge = Math.floor(shippingBaseCost * fuelSurchargeRatio)
+  console.log('燃料サーチャージ', fuelSurcharge)
 
   const shippingCost = shippingBaseCost + peakSeasonSurcharge + fuelSurcharge
   console.log('送料', shippingCost)

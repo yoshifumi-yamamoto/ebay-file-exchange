@@ -40,7 +40,6 @@ function sendForm(formObject) {
   // 2次元配列に整形
   var addValues = []
   addValues = formatData(data)
-  console.log('addValues', addValues)
   
   // 既存レコードをクリアし、CSVのレコードを貼り付け
   // clearRecords(RC_ROW, RC_COL, sheet);
@@ -54,18 +53,11 @@ function formatData(data){
     row.reduce((acc, cell, i) => ({ ...acc, [header[i]]: cell }), {})
   );
   const params = getParams()
-  console.log('header', header)
-  console.log('params', params)
-  console.log('jsonData',jsonData)
   const formatedData = jsonData.map((d)=>{
     Utilities.sleep(1000)
     return params.map((param)=>{
       
-      if(d[param]=== undefined){
-        console.log('undefined', param, d)
-        return ''}
-
-      console.log('param', param)
+      if(d[param]=== undefined){return ''}
       switch(param){
         case 'Title':return titleConv(d[param])
         case 'PicURL': return imgUrlConv(d[param])
