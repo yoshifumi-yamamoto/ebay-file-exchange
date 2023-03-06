@@ -48,11 +48,22 @@ function descriptionConv(text) {
 
 // 画像URL変換
 function imgUrlConv(urls) {
-  // 先頭のhttpsは何もせず、2個目のhttpsの前に | を追加
-  var n = 1;
-  const formatUrls = urls.replace(/https/g, function(){ if(--n==0) return 'https'; else return '|https'; });
-  return formatUrls
-  
+  const MAX_URLS = 12;
+  const urlArray = urls.trim().split(/\s+/);
+  let newUrls = "";
+  if (urlArray.length >= MAX_URLS) {
+    for (let i = 0; i < MAX_URLS; i++) {
+      newUrls += urlArray[i] + "|";
+    }
+    newUrls = newUrls.slice(0, -1);
+  } else {
+    const numDuplications = MAX_URLS / urlArray.length;
+    for (let i = 0; i < numDuplications; i++) {
+      newUrls += urlArray.join("|") + "|";
+    }
+    newUrls = newUrls.slice(0, -1);
+  }
+  return newUrls;
 }
 
 
@@ -67,7 +78,8 @@ function priceConv(size, costPrice) {
     // 重さ(g)
     var normalWeight
 
-  if(size.indexOf('cm') !== -1){
+  if(size?.indexOf('cm') !== -1){
+    console.log("priceConv if")
     isKg = size.indexOf('kg') !== -1
     sizes = size.split(' x ')
     // 長さ
@@ -100,7 +112,7 @@ function priceConv(size, costPrice) {
   // 発送重量
   const shippingWeight = calcShippingWeight(length, width, height, normalWeight)
   // 送料
-  const shippingCost = calcShippingCost(shippingWeight)
+  const shippingCost = calcShippingCost(Number(shippingWeight))
   
   // 販売手数料(%)
   const salesCommissionPercentage = 0.2
@@ -130,6 +142,7 @@ function calcShippingWeight(length, width, height, weight) {
   if(length){
     console.log('サイズ表記あり')
     volumetricWeight = (length * width * height) / 5 //g換算
+    console.log()
     // 重量と容積重量の比較
     if(volumetricWeight > weight){
       shippingWeight = volumetricWeight
@@ -140,6 +153,8 @@ function calcShippingWeight(length, width, height, weight) {
     console.log('サイズ表記なし')
     // 仕入れ先にサイズがない場合
     volumetricWeight = (defaultLength * defaultWidth * defaultHeight) / 5 //g換算
+    console.log('容積重量', volumetricWeight)
+    console.log('重量', defaultWeight)
     // 重量と容積重量の比較
     if(volumetricWeight > defaultWeight){
       shippingWeight = volumetricWeight
@@ -168,6 +183,7 @@ function calcShippingCost(weight) {
   }
   console.log('finalweight', finalWeight)
 
+  console.log('weightList',weightList)
   // 料金表と一致する行番号
   const matchWeightIndex = weightList.indexOf(finalWeight)
   console.log('料金表と一致する行番号', matchWeightIndex)
