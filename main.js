@@ -1,3 +1,8 @@
+var settings = SpreadsheetApp.getActiveSpreadsheet().getSheetByName('設定')
+function doGet() {
+  return HtmlService.createHtmlOutputFromFile('index');
+}
+
 function showModal(){
     // 開いているスプレッドシートを取得
     const spreadsheet = SpreadsheetApp.getActiveSpreadsheet();
@@ -19,7 +24,6 @@ function getParams() {
   const fileIT = DriveApp.getFilesByName(fileName).next();
   const textdata = fileIT.getBlob().getDataAsString('utf8');
   const data = JSON.parse(textdata);
-  // console.log(data)
   const results = data.results
   const params = results.map(function(item){return item.properties.Name.title[0].plain_text}).reverse()
   return params
@@ -53,32 +57,33 @@ function formatData(data){
     row.reduce((acc, cell, i) => ({ ...acc, [header[i]]: cell }), {})
   );
   const params = getParams()
+  const condition = settings.getRange('I2').getValue()
+  const CategoryID = settings.getRange('H2').getValue()
   const formatedData = jsonData.map((d)=>{
     Utilities.sleep(1000)
     return params.map((param)=>{
-      
-      if(d[param]=== undefined){return ''}
       switch(param){
         case 'Title':return titleConv(d[param])
         case 'PicURL': return imgUrlConv(d[param])
         case 'StartPrice': return priceConv(d['Size'], d[param])
-        case 'Description': return descriptionConv(d[param])
+        case 'Description': return descriptionConv(condition)
+        case 'Action(SiteID=US|Country=JP|Currency=USD|Version=941)': return 'Add'
+        case 'Duration': return 'GTC'
+        case 'Format': return 'FixedPrice'
+        case 'Location': return 'Japan'
+        case 'Quantity': return '1'
+        case 'Product:UPC': return 'Does not apply'
+        case 'C:MPN': return 'Does not apply'
+        case 'BestOfferEnabled': return '1'
+        case 'ShippingProfileName': return 'Free shipping'
+        case 'ReturnProfileName': return 'Return 30days'
+        case 'Payments:Immediate': return 'ebay Payments:Immediate pay'
+        case 'ConditionID': return conditionConv(condition)
+        case 'Category': return CategoryID
         default:return d[param]
 
       }
     })
   })
   return formatedData
-}
-
-
-function myFunction() {
-  const text='これはペンです。'
-  // const sample ="https://m.media-amazon.com/images/G/09/HomeCustomProduct/360_icon_73x73v2._CB485971312__FMpng_RI_.pnghttps://m.media-amazon.com/images/I/41giDQs6tUL._AC_US40_.jpghttps://m.media-amazon.com/images/I/41dP2SXRliL._AC_US40_.jpghttps://m.media-amazon.com/images/I/51HPCe2BMzL._AC_US40_.jpghttps://m.media-amazon.com/images/I/41Xgnl7FVkL._AC_US40_.jpghttps://m.media-amazon.com/images/I/41mLMa5t3xL._AC_US40_.jpg"
-  // const sample ='RICOH デジタル一眼レフ PENTAX K-50 DAL18-55mmWR・DAL55-300mmダブルズームキット ブラック K-50 300WZOOM KIT BLACK 10879'
-  const sample ='RICOH デジタル一眼レフ PENTAX K-50 DAL18-55mmWR・DAL55-300mm'
-  console.log(titleConv(sample))
-    const sampleSize ='7 x 12.9 x 9.7 cm; 590 g'
-    const sampleCostPrice = 2000
-  console.log(priceConv(sampleSize, sampleCostPrice) )
 }
