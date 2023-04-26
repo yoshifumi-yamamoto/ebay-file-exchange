@@ -30,7 +30,7 @@ function titleConv(title) {
   const translationText = LanguageApp.translate(title, 'ja', 'en')
   // 77文字を超えたら "..."を最後につける
   if(translationText.length > 77){
-    const fixedTitle = translationText.substr(0, 77) + '...'
+    const fixedTitle = translationText.substr(0, 76) + '...'
     return fixedTitle
   }
   else{
